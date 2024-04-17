@@ -1,0 +1,42 @@
+# Ignore les répertoires et fichiers générés par Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Ignore les fichiers de configuration locaux
+.env
+
+# Ignore les fichiers de build ou de distribution
+/build/
+/dist/
+
+# Ignore les fichiers spécifiques à l'IDE ou à l'éditeur de code
+.vscode/
+.idea/
+
+# Ignore les fichiers de sauvegarde
+*.bak
+*.swp
+
+# Ignore les fichiers de log
+*.log
+
+# Ignore les fichiers de résultats de test ou de couverture
+coverage/
+
+# Ignore les fichiers temporaires
+.tmp/
+.temp/
+.temp-*
+
+# Ignore les fichiers de données spécifiques à l'utilisateur
+.DS_Store
+Thumbs.db
+
+# Ignore les fichiers de dépendances téléchargées par Bower
+bower_components/
+
+# Ignore les fichiers de dépendances téléchargées par Composer
+vendor/
