@@ -78,21 +78,21 @@ require('dotenv').config();
                     await input.fill(question.exam_answers[0].name);
                     await page.waitForTimeout(randomDelay(1000, 1200));
                 }
+
+                // Click the form submission button with class 'button-solid-primary-large'
+                await page.click('.button-solid-primary-large');
+
+                // await page.waitForTimeout(randomDelay(4000, 5000));
+
+                await page.click('.container .group');
+
+                await page.selectOption('select', 'A2'); // Select an option in a <select> element
+
+                await page.waitForTimeout(randomDelay(4000, 5000));
             }
         }
 
-        console.log('here 1');
 
-        await page.waitForTimeout(randomDelay(2000, 3000));
-
-        // Click the form submission button with class 'button-solid-primary-large'
-        await page.click('.button-solid-primary-large');
-
-        console.log('here 2');
-
-        await page.waitForTimeout(randomDelay(3000, 4000));
-
-        console.log('here 3');
     } catch (error) {
         console.error('An error occurred:', error);
     } finally {
